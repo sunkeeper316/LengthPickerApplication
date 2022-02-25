@@ -1,6 +1,10 @@
 # LengthPickerApplication
 
+
+* ImperialDialog
 ![Logo](https://raw.githubusercontent.com/sunkeeper316/LengthPickerApplication/master/IMG/IMG_ImperialDialog.jpg)
+* MetricDialog
+![Logo](https://raw.githubusercontent.com/sunkeeper316/LengthPickerApplication/master/IMG/IMG_MetricDialog.jpg)
 
 
 # Gradle
