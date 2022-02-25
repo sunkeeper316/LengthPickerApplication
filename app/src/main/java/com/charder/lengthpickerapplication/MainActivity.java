@@ -51,15 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         });
-//        double test = 133.6;
-//        LengthMetricNumber lengthMetricNumber = LengthMetricNumber.setCMValue(test);
-//        LengthImperialNumber l_v = LengthImperialNumber.setValue(test);
-//        Log.e("test", "d:" + lengthMetricNumber.getNumber_hundred_value());
-//        Log.e("test", "ten:" + lengthMetricNumber.getNumber_ten_value());
-//        Log.e("test", "one:" + lengthMetricNumber.getNumber_one_value());
-//        Log.e("test", "decimal:" + lengthMetricNumber.getNumber_decimal_value());
         tv_show = findViewById(R.id.tv_show);
-
         length_edit = findViewById(R.id.length_edit);
         length_edit.setInputType(InputType.TYPE_NULL);
         length_edit.setFocusable(false);
