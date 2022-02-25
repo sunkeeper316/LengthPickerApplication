@@ -6,13 +6,12 @@
 
 [![jitpack][4]][5]
 
-Add the jitpack repo to your your project's build.gradle at the end of repositories [Why?](#why-jitpack)
+Add the jitpack repo to your your project's build.gradle at the end of repositories 
 
 /build.gradle
 ```groovy
 allprojects {
 	repositories {
-		jcenter()
 		maven { url "https://jitpack.io" }
 	}
 }
@@ -57,3 +56,6 @@ This is the basic usage of a single showcase view, you should check out the samp
 	
                 
 ```
+
+[3]: https://code.google.com/p/android-flowtextview/
+[4]: https://img.shields.io/github/release/deano2390/MaterialShowcaseView.svg?label=JitPack
