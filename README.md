@@ -4,7 +4,7 @@
 # Gradle
 --------
 
-[![jitpack][4]][5]
+[![](https://jitpack.io/v/sunkeeper316/LengthPickerApplication.svg)](https://jitpack.io/#sunkeeper316/LengthPickerApplication)
 
 Add the jitpack repo to your your project's build.gradle at the end of repositories 
 
