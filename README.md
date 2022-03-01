@@ -43,6 +43,7 @@ This is the basic usage of a single showcase view, you should check out the samp
 	// single example MetricDialog
 	new PickerMetricDialogFragment()
                         .setValue(m_value)
+                        .setOKText("確定")
                         .setOnValueChangedListener( (view , i_value , m_value) -> {
                             
                         }).setOnOKClickListener((view, i_value, m_value) -> {
@@ -56,6 +57,7 @@ This is the basic usage of a single showcase view, you should check out the samp
     
     new PickerImperialDialogFragment()
                         .setValue(i_value)
+                        .setOKText("確定")
                         .setOnValueChangedListener( (view , i_value , m_value) -> {
                             
                              })
