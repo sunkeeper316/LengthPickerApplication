@@ -28,6 +28,8 @@ public class PickerMetricDialogFragment extends DialogFragment {
     OnValueChangedListener onValueChangedListener;
     double value = 0;
 
+    String text_ok = "OK";
+
     LengthMetricNumber lengthMetricNumber = new LengthMetricNumber();
 
     @NonNull
@@ -83,6 +85,7 @@ public class PickerMetricDialogFragment extends DialogFragment {
             this.onValueChangedListener.onClick(numberPicker , imperial_value , lengthMetricNumber.getAll_cm_value());
         });
         TextView tv_ok = customView.findViewById(R.id.tv_ok);
+        tv_ok.setText(text_ok);
         tv_ok.setOnClickListener( v -> {
             double imperial_value = Calculation.mToIHeight(lengthMetricNumber.getAll_cm_value());
             this.onOKClickListener.onClick(v , imperial_value , lengthMetricNumber.getAll_cm_value());
@@ -90,6 +93,10 @@ public class PickerMetricDialogFragment extends DialogFragment {
         });
 
         return alertDialog;
+    }
+    public PickerMetricDialogFragment setOKText(String text) {
+        this.text_ok = text;
+        return this;
     }
     public PickerMetricDialogFragment setValue(double cmValue){
         lengthMetricNumber = LengthMetricNumber.setCMValue(cmValue);

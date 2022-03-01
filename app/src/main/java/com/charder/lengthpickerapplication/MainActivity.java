@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             if (unit == 0){
                 new PickerMetricDialogFragment()
                         .setValue(m_value)
+                        .setOKText("確定")
                         .setOnValueChangedListener( (view , i_value , m_value) -> {
                             this.i_value = i_value;
                             this.m_value = m_value;
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             }else {
                 new PickerImperialDialogFragment()
                         .setValue(i_value)
+                        .setOKText("確定")
                         .setOnValueChangedListener( (view , i_value , m_value) -> {
                             this.i_value = i_value;
                             this.m_value = m_value;

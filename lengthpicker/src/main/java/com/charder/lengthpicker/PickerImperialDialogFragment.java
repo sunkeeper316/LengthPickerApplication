@@ -29,6 +29,8 @@ public class PickerImperialDialogFragment extends DialogFragment {
 
     LengthImperialNumber lengthImperialNumber = new LengthImperialNumber();
 
+    String text_ok = "OK";
+
     @NonNull
     @org.jetbrains.annotations.NotNull
     @Override
@@ -73,6 +75,7 @@ public class PickerImperialDialogFragment extends DialogFragment {
             this.onValueChangedListener.onClick(numberPicker , lengthImperialNumber.getAll_in_value() , metric_value);
         });
         TextView tv_ok = customView.findViewById(R.id.tv_ok);
+        tv_ok.setText(text_ok);
         tv_ok.setOnClickListener( v -> {
             double metric_value = Calculation.iToMHeight(lengthImperialNumber.getAll_in_value());
             this.onOKClickListener.onClick(v , lengthImperialNumber.getAll_in_value() , metric_value);
@@ -80,6 +83,10 @@ public class PickerImperialDialogFragment extends DialogFragment {
         });
 
         return alertDialog;
+    }
+    public PickerImperialDialogFragment setOKText(String text) {
+        this.text_ok = text;
+        return this;
     }
     public PickerImperialDialogFragment setValue(double inchValue){
         lengthImperialNumber = LengthImperialNumber.setInchValue(inchValue);
